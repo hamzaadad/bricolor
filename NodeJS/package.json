@@ -1,0 +1,9 @@
+{
+  "name": "FolderHandler",
+  "version": "1.0.0",
+  "main": "bin.js",
+  "license": "MIT",
+  "scripts": {
+    "check": "node bin.js"
+  }
+}
