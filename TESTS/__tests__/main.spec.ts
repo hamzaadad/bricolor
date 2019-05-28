@@ -2,15 +2,18 @@ import { greater } from '../src/main';
 
 
 describe('count greater than 50', () => {
-  const arrayExmaple = [40, 20, 430, 56, 32, 564];
-  const count = 3;
-  it('should fail', () => {
+  
+  it('return 6 giving $arrayExmaple', () => {
+    const arrayExmaple = [51, 50, 430, 56, 50.9, 49.999999999999, 564];
+    const fasleCount = 6;
     const arrayCount = greater(arrayExmaple);
-    expect(arrayCount).toBe(count + 1);
+    expect(arrayCount == fasleCount).toBe(false);
 
   })
-  it("return $count giving $arrayExmaple", () => {
+  it("return 3 giving $arrayExmaple", () => {
+    const arrayExmaple = [40, 20, 430, 56, 32, 564];
+    const exprecTedCount = 3;
     const arrayCount = greater(arrayExmaple);
-    expect(arrayCount).toBe(count);
+    expect(arrayCount).toBe(exprecTedCount);
   })
 })
