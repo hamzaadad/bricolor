@@ -3,11 +3,19 @@ import { greater } from '../src/main';
 
 describe('count greater than 50', () => {
   
-  it('return 6 giving $arrayExmaple', () => {
+  it('should be greated than 3', () => {
+    const arrayExmaple = [51, 50, 430, 56, 50.9, 49.999999999999, 564];
+    const minCount = 3;
+    const arrayCount = greater(arrayExmaple);
+    expect(arrayCount).toBeGreaterThan(minCount);
+
+  })
+
+  it('should not bet 6', () => {
     const arrayExmaple = [51, 50, 430, 56, 50.9, 49.999999999999, 564];
     const fasleCount = 6;
     const arrayCount = greater(arrayExmaple);
-    expect(arrayCount == fasleCount).toBe(false);
+    expect(arrayCount).not.toBe(fasleCount);
 
   })
   it("return 3 giving $arrayExmaple", () => {
